@@ -11966,6 +11966,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: rgb(255, 233, 200);
+}
+
 .delius-swash-caps-regular {
   font-family: "Delius Swash Caps", serif;
   font-weight: 400;
@@ -11976,4 +11980,15 @@ textarea.form-control-lg {
   font-family: "Delius Swash Caps", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.titre {
+  background-color: rgb(255, 233, 200);
+  text-align: center;
+}
+
+#navbarNavDropdown {
+  display: flex;
+  flex-basis: auto;
+  justify-content: flex-end;
 }/*# sourceMappingURL=main.css.map */
