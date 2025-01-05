@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>    
     <link rel="preconnect" href="https://fonts.googleapis.com">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playwrite+CO+Guides&family=Playwrite+ES+Deco+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Happy+Monkey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css"/>
     <title>Document</title>
 </head>
 <body>
-    <header>Le header de mon site / Le menu de mon site</header>
+    <header> 
+
+      <!--<div class="titre">
+        <h1 class="titre">Web-Crea 2.0</h1>
+    
+       <h3 class="titre_web">Services d'aide aux particuliers et aux entreprises</h3>
+    </div>-->
+            
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="images/Web_Crea4.png" alt="logo" width="150" height="auto">
+          </a>
+          <a class="navbar-brand" href="/">Web-Crea</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/confiance">Pourquoi me faire confiance</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/prestations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prestations & Tarifs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/informatique">Aide Informatique</a></li>
+                  <li><a class="dropdown-item" href="/administrative">Aide Administrative</a></li>
+                  <li><a class="dropdown-item" href="/tarifs">Tarification</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>     
+    </header>
 
     <main id="main-page">
 
@@ -21,7 +61,24 @@
 
     </main>
 
-    <footer>Le footer de mon site</footer>
+    <footer>
+      
+      <div class="card text-center">
+        <div class="card-header">
+          Web-Crea 2.0 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Me contacter</h5>
+          <p class="card-text">Cliquez : <a type="button" href="mailto:w3b-cre4@gmail.com" class="couleur">ici</a></p>
+          
+        </div>
+        <div class="card-footer text-body-secondary">
+          <p class="card-text">Politique de confidentialité : <a type="button" href="mentions_legales.docx" class="couleur">ici</a></p>
+        </div>
+      </div>
+
+    </footer>
+    
     <script type="module" src="/Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
