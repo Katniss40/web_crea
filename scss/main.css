@@ -73,6 +73,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 41, 34, 34;
   --bs-font-sans-serif: "Happy Monkey", sans-serif;
+  --bs-font-sans-serif: "Happy Monkey", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -6798,6 +6799,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #292222 !important;
+  color: #292222 !important;
   background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -12009,11 +12011,14 @@ body {
 
 .Emilys-Candy {
   font-family: "Emilys Candy", serif;
+.Emilys-Candy {
+  font-family: "Emilys Candy", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .titre {
+  font-family: Happy Monkey;
   font-family: Happy Monkey;
   background-color: rgb(255, 233, 200);
   text-align: center;
