@@ -4,27 +4,244 @@
 body {
   background-color: rgb(255, 233, 200);
 }
+.hero-scene {
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    background-image: url('/images/web_site2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    background-attachment: fixed; /* Pour que l'image reste fixe lors du défilement */
+    height: 300px;
+    width: 100%;
+    //background-color: rgb(255, 233, 200);
+    display: inline-block;
+    opacity: 0.6;
+    font-family: Happy Monkey ;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    
+  }
+}
+
+.titre_header {
+  background-color: rgb(255, 233, 200);
+  opacity: 0.6;
+  font-family: Happy Monkey ;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+  border-radius:80%;
+
+}
 
 .delius-swash-caps-regular {
-    font-family: "Delius Swash Caps", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Delius Swash Caps", serif;
+  font-weight: 400;
+  font-style: normal;
+}
   
-  .delius-swash-caps-regular {
-    font-family: "Delius Swash Caps", serif;
-    font-weight: 400;
-    font-style: normal;
+.Emilys-Candy {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Page home
+
+.titre {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  text-align: center;
+}
+
+.erreur {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  text-align: center;
+}
+  
+#navbarSupportedContent {
+  display: flex;
+  flex-basis: auto;
+  justify-content: flex-end;
+}
+  
+.titre_web {
+  font-family: Happy Monkey;
+  text-align: center;
+}
+
+.sous_titre {
+  font-family: Happy Monkey;
+  text-align: left;
+  text-decoration: underline;
+  font-weight: bolder;
   }
 
-  .titre {
-    background-color: rgb(255, 233, 200);
-    text-align: center;
-  }
+.administrative {
+  font-family: Happy Monkey ;
+  float:left;
+}
+
+.couleur {
+  font-family: Happy Monkey ;
+  color: black;
+}
+
+.coupure {
+  margin-right: 85px;
+  margin-left: 100px;
+}
+
+.group_admin {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  display: flex;
+  font-family: Happy Monkey;
+  font-size: 18px;
+}
+
+.box_admin {
+  background-color: rgb(224, 206, 247);
+  border: 5px solid rebeccapurple;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: 364px;
+}
+
+.float_admin {
+  float: left;
+  width: 520px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.group_info {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  display: flex;
+  font-family: Happy Monkey;
+  font-size: 18px;
+}
+
+.box_info {
+  background-color: rgb(224, 206, 247);
+  border: 5px solid rebeccapurple;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450;
+  height: 364px;
+}
+
+.float_info {
+  float: right;
+  width: 520px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.group_web {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  display: flex;
+  font-family: Happy Monkey;
+  font-size: 18px;
+}
+
+.box_web {
+  background-color: rgb(224, 206, 247);
+  border: 5px solid rebeccapurple;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: 364px;
+}
   
-  #navbarNavDropdown {
-    display: flex;
-    flex-basis: auto;
-    justify-content: flex-end;
-  }
+.float_web {
+  float: left;
+  width: 520px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+// Page confiance
+
+.titre_confiance {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.group_confiance {
+  font-family: Happy Monkey ;
+  background-color: rgb(255, 233, 200);
+  display: flex;
+  font-family: Happy Monkey;
+  font-size: 18px;
+}
+
+.box_confiance {
+  background-color: $secondary;
+  border: 5px solid $tertiary;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: auto;
+}
   
+.float_confiance_l {
+  float: left;
+  width: 520px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.float_confiance_r {
+  float: right;
+  width: 520px;
+  height: 355px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+// Page administrative
+
+
+
+
+
+// Page informatique
+
+
+
+
+
+// Page sites
+
+
+
+
+
+// Pages tarifs
+
+
+
+
+// Page Rendez-vous

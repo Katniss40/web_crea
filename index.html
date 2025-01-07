@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>    
     <link rel="preconnect" href="https://fonts.googleapis.com">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playwrite+CO+Guides&family=Playwrite+ES+Deco+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Happy+Monkey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css"/>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="titre">
-             <h1 class="titre">Web-Crea 2.0</h1>
-
-            <h3 class="titre">Services d'aide aux particuliers et aux entreprises</h3>
-        </div>
-        <nav class="navbar navbar-expand-lg ml-auto bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ml-auto bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <img src="images/logo.jpg" alt="logo" width="100" height="auto">
@@ -41,43 +37,60 @@
                       Prestations & Tarifs
                     </a>
                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/sites">Création site web</a></li>
                       <li><a class="dropdown-item" href="/informatique">Aide Informatique</a></li>
                       <li><a class="dropdown-item" href="/administrative">Aide Administrative</a></li>
                       <li><a class="dropdown-item" href="/tarifs">Tarification</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/login">Connexion</a>
                   </li>
                   
                 </ul>
               </div>
             </div>
           </nav>
-    
+
+          
+          <section class="background">
+            
+            <div class="hero-scene ">
+                <div class="hero-scene-content">
+                  <div>
+                  </br>
+                </br>
+              </br>
+                  </br><h3 class="titre_header">Selon votre lieu d'habitation et vos préférences j'interviens directement à votre domicile ou à distance.</h3></br>
+                    <h1 class="titre_header">Web-Crea 2.0</h1></br>
+                    <h3 class="titre_header">Services d'aide aux particuliers et aux entreprises</h3></br></br>
+                  </div>        
+                </div>                  
+            </div>
+                    
+          </section>
     </header>
 
     <main id="main-page">
+
+      
 
         <!-- Mes différentes pages seront injectees ici-->
 
     </main>
 
     <footer>
-      
       <div class="card text-center">
         <div class="card-header">
-          Web-Crea 2.0 
+          Web-Crea 2.0
         </div>
         <div class="card-body">
-          <h5 class="card-title">Me contacter</h5>
-          <p class="card-text">Cliquez : <a type="button" href="mailto:web-crea-2.0@gmail.com">ici</a></p>
-          
+          <h5 class="card-title">   </h5>
+          <p class="card-text"> Mentions légales téléchargables ci-dessous</p>
+          <a href="mentions_legales.docx" class="btn btn-primary">Mentions légales</a>
         </div>
         <div class="card-footer text-body-secondary">
-          <p class="card-text">Politique de confidentialité : <a type="button" src="#">ici</a></p>
+          © 2025 . TOUS DROITS RÉSERVÉS
         </div>
       </div>
+
 
     </footer>
     <script type="module" src="/Router/router.js"></script>
