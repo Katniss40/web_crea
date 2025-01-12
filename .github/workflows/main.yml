@@ -13,7 +13,8 @@ jobs:
       with:
         server: ftp-web-cre4.alwaysdata.net
         username: web-cre4
-        password: ${{ secrets.ftp_password }}
+        password: LandesAntibes0640@
+        
         exclude: |
           **/.git*
           **/.git*/**
