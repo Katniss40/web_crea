@@ -12,6 +12,7 @@ export const allRoutes = [
     new Route("/rdv", "rdv", "/pages/rendez_vous.html"),
     new Route("/sites", "Sites", "/pages/sites.html"),
     new Route("/rdvDom", "rdvDom", "/pages/rdv_dep.html"),
+    new Route("/formulaire", "formulaire", "/pages/formulaire.html"),
     
 ];
     

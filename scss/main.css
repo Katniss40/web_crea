@@ -12189,4 +12189,18 @@ body {
   margin-left: 100px;
   width: 1450px;
   height: auto;
+}
+
+.group_formulaire {
+  background-color: rgb(199, 231, 249);
+  border: 5px solid #6b8290;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: auto;
+}
+
+.mail {
+  font-size: small;
 }/*# sourceMappingURL=main.css.map */

@@ -253,3 +253,21 @@ body {
 }
 
 // Page Rendez-vous
+
+
+
+// page Formulaire
+
+.group_formulaire {
+  background-color: $primary;
+  border: 5px solid $secondary;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: auto;
+}
+
+.mail {
+  font-size: small;
+}
