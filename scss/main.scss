@@ -2,8 +2,9 @@
 @import 'custom';
 
 body {
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
 }
+
 .hero-scene {
   position: relative;
   &::before{
@@ -16,7 +17,7 @@ body {
     background-attachment: fixed; /* Pour que l'image reste fixe lors du défilement */
     height: 300px;
     width: 100%;
-    //background-color: rgb(255, 233, 200);
+    background-color: $tertiary;
     display: inline-block;
     opacity: 0.6;
     font-family: Happy Monkey ;
@@ -27,14 +28,14 @@ body {
 }
 
 .titre_header {
-  background-color: rgb(255, 233, 200);
+  background-color: $light;
   opacity: 0.6;
   font-family: Happy Monkey ;
   text-align: center;
   color: black;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte */
-  border-radius:80%;
+  border-radius: 150px;
 
 }
 
@@ -54,13 +55,13 @@ body {
 
 .titre {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   text-align: center;
 }
 
 .erreur {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   text-align: center;
 }
   
@@ -99,15 +100,15 @@ body {
 
 .group_admin {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   display: flex;
   font-family: Happy Monkey;
   font-size: 18px;
 }
 
 .box_admin {
-  background-color: rgb(224, 206, 247);
-  border: 5px solid rebeccapurple;
+  background-color: $primary;
+  border: 5px solid $secondary;
   display: flow-root;
   margin-right: 87px;
   margin-left: 100px;
@@ -126,15 +127,15 @@ body {
 
 .group_info {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   display: flex;
   font-family: Happy Monkey;
   font-size: 18px;
 }
 
 .box_info {
-  background-color: rgb(224, 206, 247);
-  border: 5px solid rebeccapurple;
+  background-color: $primary;
+  border: 5px solid $secondary;
   display: flow-root;
   margin-right: 87px;
   margin-left: 100px;
@@ -153,15 +154,15 @@ body {
 
 .group_web {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   display: flex;
   font-family: Happy Monkey;
   font-size: 18px;
 }
 
 .box_web {
-  background-color: rgb(224, 206, 247);
-  border: 5px solid rebeccapurple;
+  background-color: $primary;
+  border: 5px solid $secondary;
   display: flow-root;
   margin-right: 87px;
   margin-left: 100px;
@@ -187,15 +188,15 @@ body {
 
 .group_confiance {
   font-family: Happy Monkey ;
-  background-color: rgb(255, 233, 200);
+  background-color: $tertiary;
   display: flex;
   font-family: Happy Monkey;
   font-size: 18px;
 }
 
 .box_confiance {
-  background-color: $secondary;
-  border: 5px solid $tertiary;
+  background-color: $primary;
+  border: 5px solid $secondary;
   display: flow-root;
   margin-right: 87px;
   margin-left: 100px;
@@ -241,7 +242,14 @@ body {
 
 // Pages tarifs
 
-
-
+.group_tarifs {
+  background-color: $primary;
+  border: 5px solid $secondary;
+  display: flow-root;
+  margin-right: 87px;
+  margin-left: 100px;
+  width: 1450px;
+  height: auto;
+}
 
 // Page Rendez-vous

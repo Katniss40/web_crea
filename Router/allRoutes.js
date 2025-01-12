@@ -11,6 +11,7 @@ export const allRoutes = [
     new Route("/confiance", "confiance", "/pages/confiance.html"),
     new Route("/rdv", "rdv", "/pages/rendez_vous.html"),
     new Route("/sites", "Sites", "/pages/sites.html"),
+    new Route("/rdvDom", "rdvDom", "/pages/rdv_dep.html"),
     
 ];
     
