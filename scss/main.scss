@@ -34,7 +34,8 @@ body {
   text-align: center;
   color: black;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+  text-decoration: underline;
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre du texte */
   border-radius: 150px;
 
 }
@@ -254,6 +255,11 @@ body {
 
 // Page Rendez-vous
 
+.titre_rdv {
+  background-color: rgb(231, 231, 231);
+  font-family: Happy Monkey;
+  text-align: center;
+}
 
 
 // page Formulaire
