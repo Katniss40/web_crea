@@ -1,0 +1,69 @@
+
+
+<section class="body_meteo">
+    <h1 class="h1_meteo">Bienvenue dans la Recherche Météo</h1>
+    <h3 class="h3_meteo"> Vous souhaitez connaitre la météo prés de chez vous? Entrez le nom de votre ville</h3>
+    <input type="text" id="city" placeholder="Entrez le nom de la ville">
+    <button onclick="fetchWeatherData()">Rechercher</button>
+    <div id="results"></div>
+
+    <script>
+        async function fetchWeatherData() {
+            const apiKey = 'e6e1166fceb44e54a66e639860681963'; // la clé API
+            const city = document.getElementById('city').value;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                displayResults(data);
+            } catch (error) {
+                console.error("Erreur lors de la récupération des données météorologiques:", error);
+            }
+        }
+
+        
+
+        // Fonction pour afficher les résultats
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            
+            if (data.cod === 200) {
+                resultsDiv.innerHTML = `
+                <p class="ville">Ville: ${data.name}</p>
+            <div class="result">
+                
+                <div class="container">
+                    <div class="column left-column">                                        
+                        <p class="p_meteo">Coordonnées:</p><h2 class="h2_meteo"> Longitude ${data.coord.lon},</br> Latitude ${data.coord.lat}</h2>
+                        <p class="p_meteo">Météo:</p><h2 class="h2_meteo"> ${data.weather[0].description}</h2>
+                        <p class="p_meteo">Vent:</p> <h2 class="h2_meteo">${(data.wind.speed / 3.6).toFixed(2)} km/h </h2>
+                    </div>
+                    <div class="column centerG-column">
+                        <p class="p_meteo">Ressenti:</p> <h2 class="h2_meteo">${data.main.feels_like} K / ${(data.main.feels_like - 273.15).toFixed(0)} °</h2>
+                        <p class="p_meteo">Température min:</p> <h2 class="h2_meteo">${data.main.temp_min} K / ${(data.main.temp_min - 273.15).toFixed(0)} °</h2>                    
+                        <p class="p_meteo">Température max:</p> <h2 class="h2_meteo">${data.main.temp_max} K / ${(data.main.temp_min - 273.15).toFixed(0)} °</h2>
+                        <p class="p_meteo">Température:</p> <h2 class="h2_meteo">${data.main.temp} K / ${(data.main.temp_min - 273.15).toFixed(0)} °</h2>   
+                    </div>
+                    <div class="column centerD-column">
+                        <p class="p_meteo">Pression:</p> <h2 class="h2_meteo">${data.main.pressure} hPa</h2>
+                        <p class="p_meteo">Humidité:</p> <h2 class="h2_meteo">${data.main.humidity}%</h2>                                                                
+                        <p class="p_meteo">Couverture nuageuse:</p> <h2 class="h2_meteo">${data.clouds.all}%</h2>
+                       
+                      </div>
+                    <div class="column right-column">
+                        <p class="p_meteo">Lever du soleil:</p> <h2 class="h2_meteo">${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</h2>  
+                        <p class="p_meteo">Coucher du soleil:</p> <h2 class="h2_meteo">${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</h2>
+                        <p class="p_meteo">Fuseau horaire:</p> <h2 class="h2_meteo">${data.timezone / 3600} heures</h2>                        
+                    </div>
+                </div>
+            </div>
+                `;
+            } else {
+                resultsDiv.innerHTML = `<p>Erreur: ${data.message}</p>`;
+            }
+        }
+  
+    </script>
+</section>
+

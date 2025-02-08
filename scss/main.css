@@ -11992,6 +11992,8 @@ body {
 }
 
 .titre_header {
+  margin-left: 130px;
+  margin-right: 130px;
   background-color: rgb(204, 205, 206);
   opacity: 0.6;
   font-family: Happy Monkey;
@@ -12013,6 +12015,19 @@ body {
   font-family: "Emilys Candy", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#coco_b {
+  background: #f0e0f0;
+  font-family: Montserrat, "sans-serif";
+  justify-content: center;
+  color: #303030;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: 50px;
+  font-family: Montserrat, "sans-serif";
+  box-shadow: 0px 2px 2px 0px #6b8290;
 }
 
 .titre {
@@ -12141,6 +12156,16 @@ body {
   padding: 10px;
 }
 
+.presentation_d {
+  margin-left: 550px;
+  margin-right: 50px;
+}
+
+.presentation_g {
+  margin-left: 50px;
+  margin-right: 550px;
+}
+
 .titre_confiance {
   text-align: center;
   text-decoration: underline;
@@ -12182,12 +12207,52 @@ body {
   padding: 10px;
 }
 
+.confiance_d {
+  margin-right: 50px;
+  margin-left: 550px;
+}
+
+.confiance_g {
+  margin-right: 550px;
+  margin-left: 50px;
+}
+
+.admin_d {
+  margin-right: 50px;
+  margin-left: 550px;
+}
+
+.admin_g {
+  margin-right: 550px;
+  margin-left: 50px;
+}
+
+.info_g {
+  margin-right: 550px;
+  margin-left: 50px;
+}
+
+.info_d {
+  margin-right: 50px;
+  margin-left: 550px;
+}
+
+.web_g {
+  margin-right: 550px;
+  margin-left: 50px;
+}
+
+.web_d {
+  margin-right: 50px;
+  margin-left: 550px;
+}
+
 .group_tarifs {
   background-color: rgb(199, 231, 249);
   border: 5px solid #6b8290;
   display: flow-root;
-  margin-right: 87px;
-  margin-left: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
   width: 1450px;
   height: auto;
 }
@@ -12213,19 +12278,27 @@ body {
 }
 
 #formulaire {
-  background: #FFD9D9;
+  background: rgb(199, 231, 249);
   font-family: Montserrat, "sans-serif";
   display: flex;
   justify-content: center;
   color: #303030;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: Montserrat, "sans-serif";
+  box-shadow: 0px 2px 2px 0px #6b8290;
 }
 
 .contactez-nous {
-  width: 700px;
+  width: 1000px;
   border: 1px solid;
   border-radius: 8px;
   padding: 0 50px 0 50px;
   background: white;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .contactez-nous > h1, .contactez-nous > .h1 {
@@ -12312,4 +12385,89 @@ form button {
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #303030;
+}
+
+body_meteo {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.h1_meteo {
+  color: #333;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.h3_meteo {
+  color: coral;
+  border: 2px solid #d426e4; /* Bordure noire de 2 pixels */
+  text-align: center;
+}
+
+.result {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ville {
+  text-align: center;
+  font-size: 28px; /* taille du texte */
+  text-decoration: underline;
+  color: aliceblue;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* bordure noire */
+  border: 2px solid #268ee4; /* Bordure noire de 2 pixels */
+  padding: 10px; /* Espacement intérieur de 10 pixels */
+  width: -moz-fit-content;
+  width: fit-content; /* Ajuste la largeur au contenu */
+  margin: 20px; /* Espacement extérieur de 20 pixels */
+  background-image: url("/images/meteo.jpeg"); /* URL de votre image */
+  background-size: cover; /* ajuste l'image pour couvrir le cadre */
+  background-position: center; /* centre l'image dans le cadre */
+  background-repeat: no-repeat; /* empêche la répétition de l'image */
+}
+
+.h2_meteo {
+  color: aliceblue;
+  font-size: 14px; /* taille du texte */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* bordure noire 
+border: 2px solid #268ee4; /* Bordure noire de 2 pixels */
+  padding: 10px; /* Espacement intérieur de 10 pixels */
+  width: -moz-fit-content;
+  width: fit-content; /* Ajuste la largeur au contenu */
+  margin: 20px; /* Espacement extérieur de 20 pixels */
+  background-image: url("/images/meteo.jpeg"); /* URL de votre image */
+  background-size: cover; /* ajuste l'image pour couvrir le cadre */
+  background-position: center; /* centre l'image dans le cadre */
+  background-repeat: no-repeat; /* empêche la répétition de l'image */
+}
+
+.p_meteo {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex; /* Utilise Flexbox */
+}
+
+.column {
+  flex: 1; /* Chaque colonne occupe la moitié de l'espace */
+  padding: 10px;
+}
+
+.left-column {
+  background-color: #e8f8f2; /* Optionnel : pour distinguer les colonnes */
+}
+
+.centerG-column {
+  background-color: #cdf9e8; /* Optionnel : pour distinguer les colonnes */
+}
+
+.centerD-column {
+  background-color: #a7f8d9; /* Optionnel : pour distinguer les colonnes */
+}
+
+.right-column {
+  background-color: #72f9c5; /* Optionnel : pour distinguer les colonnes */
 }/*# sourceMappingURL=main.css.map */

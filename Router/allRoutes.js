@@ -5,14 +5,15 @@ import Route from "./Route.js";
 //Définir ici vos routes
 export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
-    new Route("/administrative", "administrative", "/pages/administrative.html"),
-    new Route("/informatique", "informatique", "/pages/informatique.html"),
-    new Route("/tarifs", "tarifs", "/pages/tarifs.html"),
-    new Route("/confiance", "confiance", "/pages/confiance.html"),
-    new Route("/rdv", "rdv", "/pages/rendez_vous.html"),
+    new Route("/administrative", "Administrative", "/pages/administrative.html"),
+    new Route("/informatique", "Informatique", "/pages/informatique.html"),
+    new Route("/tarifs", "Tarifs", "/pages/tarifs.html"),
+    new Route("/confiance", "Confiance", "/pages/confiance.html"),
+    new Route("/rdv", "Rdv-Tel", "/pages/rendez_vous.html"),
     new Route("/sites", "Sites", "/pages/sites.html"),
-    new Route("/rdvDom", "rdvDom", "/pages/rdv_dep.html"),
-    new Route("/formulaire", "formulaire", "/pages/formulaire.html"),
+    new Route("/rdvDom", "Rdv-Dom", "/pages/rdv_dep.html"),
+    new Route("/formulaire", "Formulaire", "/pages/php/formulaire.html"),
+    new Route("/meteo", "Meteo", "/pages/meteo.html")
     
 ];
     
