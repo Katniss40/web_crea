@@ -1,3 +1,33 @@
 password: ${{ secrets.ftp_password }}
 
 password: LandesAntibes0640@
+
+
+
+
+<form>
+  <div class="group_formulaire">
+    <div class="mb-3">
+      <label for="InputEmail1" class="form-label">Adresse m@il</label>
+      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text"></div>
+      <fieldset>
+        <h5 class="mail">J'accepte que mon mail soit conservé</h5>
+          <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">Oui</label>
+          </div>
+      </fieldset>
+    </div>
+    <div class="mb-3">
+      <label for="InputPassword1" class="form-label">Message</label>
+      <input type="password" class="form-control" id="InputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="Check1">
+      <label class="form-check-label" for="Check1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+    
+  </form>
