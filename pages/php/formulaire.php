@@ -1,36 +1,26 @@
     <?php
+       
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
     
-
-    $serveur = "mysql-web-cre4.alwaysdata.net";
-    $dbname = "web-cre4_admin";
-    $user = "web-cre4";
-    $pass = "LandesAntibes0640@";
-    
-    try{
-        //On se connecte à la BDD
-        $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
-        $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-        //On crée une table form
-        $form = "CREATE TABLE form(
-            id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            nom TEXT,
-            prenom TEXT,
-            email INT,
-            sujet TEXT,
-            message TEXT)";
-        $dbco->exec($form);
-    }
-    catch(PDOException $e){
-        echo 'Erreur : '.$e->getMessage();
+        // Validation des données (exemple simple)
+        if (empty($name) || empty($surname) || empty($email) || empty($subject) || empty($message)) {
+            echo "Tous les champs sont obligatoires.";
+        } else {
+            // Envoi de l'e-mail
+            //$to = "w3b.cre4@gmail.com"; // Remplacez par votre adresse e-mail
+            $to = "bourdeloux.corinne@orange.fr"; // Remplacez par votre adresse e-mail
+            $headers = "From: $name <$email>";
+            mail($to, $sujet, $message, $headers); 
+            echo "votre message a été envoyé avec succès";
+            
+        }
     }
 
-
-
-   /* echo 'Nom : '$_POST["nom"].'<br>';
-    echo 'Prénom : '$_POST["prenom"].'<br>';
-    echo 'E-mail : '$_POST["email"].'<br>';
-    echo 'Sujet : '$_POST["sujet"].'<br>';
-    echo 'Message : '$_POST["message"].'<br>';*/
+      
     ?>
 

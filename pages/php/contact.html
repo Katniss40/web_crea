@@ -1,0 +1,84 @@
+<section>
+    <div class="contactez-nous">
+        <br>
+        <h1 id="formulaire">Contactez-moi</h1>
+        <p>Un problème? une question? envie de m'envoyer un message? une demande de devis? ou tout autre question? n'hésitez pas à utiliser ce formulaire pour prendre contact avec moi!</p>
+
+    <!--<form action="/php/contact.php" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        
+        <input type="submit" value="Envoyer">
+    </form>-->
+
+    <div class="container">
+        <form action="/pages/php/contact.php" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom : *</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Votre nom" name="name" required> 
+            </div>
+
+            <div class="mb-3">
+                <label for="surname" class="form-label">Prénom : *</label>
+                                    <input type="text" class="form-control" id="surname" placeholder="Votre prénom" name="surname" required> 
+            </div>
+                               
+            <div class="mb-3">
+                <label for="telephone" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="telephone" placeholder="01.02.03.04.05" name="telephone"> 
+              </div>
+
+              <div class="mb-3">
+              <label for="email" class="form-label">Email : *</label>
+                                <input type="email" class="form-control" id="email" placeholder="email" name="email" required>  
+            </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Sujet : *</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Sujet" name="subject" required> 
+              </div> 
+              <div class="mb-3">
+                <label for="message" class="form-label">Message : *</label>
+                <textarea id="message" class="form-control" name="message" required></textarea>
+                <div class="text-center"></div>
+        <br>
+
+        <h5 class="contact">Les champs suivis d'un * sont obligatoires</h5>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+                </form>
+        </div>
+
+        <div id="form-feedback" class="alert mt-3 d-none" role="alert"></div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const box = document.getElementById('form-feedback');
+        if (!box) return;
+        if (params.has('success')) {
+            box.textContent = 'Votre message a été envoyé avec succès.';
+            box.classList.remove('d-none', 'alert-danger');
+            box.classList.add('alert-success');
+        } else if (params.get('error') === 'missing') {
+            box.textContent = 'Veuillez remplir tous les champs obligatoires.';
+            box.classList.remove('d-none', 'alert-success');
+            box.classList.add('alert-danger');
+        } else if (params.get('error') === 'email') {
+            box.textContent = 'Adresse e-mail invalide.';
+            box.classList.remove('d-none', 'alert-success');
+            box.classList.add('alert-danger');
+        } else if (params.get('error') === 'send') {
+            box.textContent = "L'envoi a échoué. Merci de réessayer ou de me contacter directement.";
+            box.classList.remove('d-none', 'alert-success');
+            box.classList.add('alert-danger');
+        }
+    });
+</script>

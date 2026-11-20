@@ -49,8 +49,11 @@ const LoadContentPage = async () => {
 const routeEvent = (event) => {
   event = event || window.event;
   event.preventDefault();
+  // Assurer que l'on récupère bien l'élément <a> même si l'icône/texte est cliqué
+  const anchor = event.currentTarget || event.target.closest('a');
+  if (!anchor || !anchor.href) return;
   // Mise à jour de l'URL dans l'historique du navigateur
-  window.history.pushState({}, "", event.target.href);
+  window.history.pushState({}, "", anchor.getAttribute('href'));
   // Chargement du contenu de la nouvelle page
   LoadContentPage();
 };

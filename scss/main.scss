@@ -5,6 +5,31 @@ body {
   background-color: $tertiary;
 }
 
+img,
+iframe,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rdv-container {
+  padding: 1rem;
+}
+
+.rdv-iframe {
+  border: 0;
+  width: 100%;
+  min-height: 400px;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .rdv-iframe {
+    min-height: 320px;
+  }
+}
+
 .hero-scene {
   position: relative;
   &::before{
@@ -386,6 +411,78 @@ body {
   font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px #6b8290;
   }
+
+// Responsive overrides
+@media (max-width: 992px) {
+  .hero-scene::before {
+    background-attachment: scroll;
+    height: 220px;
+  }
+
+  .titre_header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 32px;
+  }
+
+  .group_admin,
+  .group_info,
+  .group_web,
+  .group_confiance,
+  .group_tarifs,
+  .group_formulaire {
+    display: block;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .box_admin,
+  .box_info,
+  .box_web,
+  .box_confiance,
+  .group_tarifs,
+  .group_formulaire {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    border-width: 3px;
+  }
+
+  .float_admin,
+  .float_info,
+  .float_web,
+  .float_confiance_l,
+  .float_confiance_r {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .presentation_d,
+  .presentation_g,
+  .confiance_d,
+  .confiance_g,
+  .admin_d,
+  .admin_g,
+  .info_g,
+  .info_d,
+  .web_g,
+  .web_d {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contactez-nous {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
   
   form div > input, form div > select {
   height: 50px;
@@ -526,3 +623,9 @@ body {
   .right-column {
     background-color: #72f9c5; /* Optionnel : pour distinguer les colonnes */
   }
+
+@media (max-width: 992px) {
+  .container {
+    display: block; /* revenir au flux normal pour éviter les débordements */
+  }
+}
